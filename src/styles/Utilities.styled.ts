@@ -10,8 +10,12 @@ export const rem = (value: number, omitUnit = false) => {
   return value === 0 ? "0" : `${value / 16}${omitUnit === true ? "" : "rem"}`;
 };
 
-export const alpha = (color: string, opacity = 1) =>
-  `color-mix(in srgb, ${color} ${opacity * 100}%, rgb(0,0,0,0))`;
+export const alpha = (color: string, opacity = 1) => {
+  if (opacity < 0 || opacity > 1)
+    throw new Error("Opacity has to be between 0 and 1");
+  if (!color) throw new Error("No color was provided");
+  return `color-mix(in srgb, ${color} ${opacity * 100}%, rgb(0,0,0,0))`;
+};
 
 // Breakpoints (mobile up)
 export const bp = {
