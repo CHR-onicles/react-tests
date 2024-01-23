@@ -1,2 +1,3 @@
 /**setupTest.ts */
-// import "@testing-library/jest-dom/vitest";
+// Extends vitest with jest
+import "@testing-library/jest-dom/vitest";
