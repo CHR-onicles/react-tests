@@ -8,6 +8,8 @@ import {
 
 import { Home } from "@pages/Home";
 
+import { Counter } from "@components/Counter";
+
 
 const Root = () => {
   return (
@@ -21,7 +23,7 @@ const Root = () => {
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
-      <Route index element={<Home />} />
+      <Route index element={<Counter />} />
       <Route path="*" element={<h1> Oops! This page does not exist</h1>} />
     </Route>
   )

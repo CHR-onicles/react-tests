@@ -4,3 +4,7 @@ build/*
 public/*
 *.d.ts
 *.config.ts
+*.config.js
+*.config.cjs
+fileTransformer.*
+# setupTest.*
