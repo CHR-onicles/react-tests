@@ -24,7 +24,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
     "react-test-renderer": "^18.2.0",
-    "react-use": "^17.4.3",
+    "react-use": "^17.5.0",
     "styled-components": "^6.1.6"
   },
   "devDependencies": {
