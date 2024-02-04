@@ -9,9 +9,10 @@ import { StyledCounter } from "./Counter.styled";
 
 interface CounterProps {
   initialCount?: number;
+  increaseByOne?: () => void;
 }
 
-export const Counter = ({ initialCount }: CounterProps) => {
+export const Counter = ({ initialCount, increaseByOne }: CounterProps) => {
   const [count, setCount] = useState(initialCount ?? 0);
 
   const increment = () => {
@@ -47,6 +48,7 @@ export const Counter = ({ initialCount }: CounterProps) => {
             <button onClick={decrement}>Decrement</button>
             <button onClick={reset}>Reset</button>
             <button onClick={switchSign}>Switch sign</button>
+            <button onClick={increaseByOne}>Prop click</button>
           </div>
         </div>
       </Container>

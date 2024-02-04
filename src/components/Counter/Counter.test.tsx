@@ -1,5 +1,5 @@
 import { cleanup, fireEvent, render } from "@testing-library/react";
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { Counter } from "./index";
 
@@ -69,4 +69,16 @@ describe("Counter", () => {
     const countValue3 = getByTestId("count").textContent;
     expect(countValue3).toEqual("33");
   });
+});
+
+it("Func should be called", () => {
+  const handleClick = vi.fn();
+  const { getByRole } = render(
+    <Counter initialCount={0} increaseByOne={handleClick} />
+  );
+
+  const btn = getByRole("button", { name: "Prop click" });
+
+  fireEvent.click(btn);
+  expect(handleClick).toHaveBeenCalledOnce();
 });
