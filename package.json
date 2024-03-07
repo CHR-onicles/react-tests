@@ -44,7 +44,7 @@
     "husky": "^8.0.3",
     "jsdom": "^24.0.0",
     "lint-staged": "^14.0.1",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.2",
     "vite": "^4.5.2",
     "vite-plugin-svgr": "^3.3.0",
     "vite-tsconfig-paths": "^4.3.1",
