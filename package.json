@@ -27,7 +27,7 @@
     "styled-components": "^6.1.6"
   },
   "devDependencies": {
-    "@tanstack/eslint-plugin-query": "^5.18.1",
+    "@tanstack/eslint-plugin-query": "^5.27.7",
     "@testing-library/react": "^14.2.1",
     "@types/react": "^18.2.52",
     "@types/react-dom": "^18.2.18",
